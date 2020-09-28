@@ -14,7 +14,7 @@ namespace Authorization.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class ProductController : ControllerBase
     {
         Uri baseAddress = new Uri("https://localhost:44321");
