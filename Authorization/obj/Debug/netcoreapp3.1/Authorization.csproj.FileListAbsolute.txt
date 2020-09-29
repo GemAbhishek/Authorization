@@ -85,3 +85,4 @@ G:\visual studio\CTS MFPE Project V3\backup\Retail Product Management\Retail Pro
 G:\visual studio\CTS MFPE Project V3\backup\Retail Product Management\Retail Product Management\Authorization\Authorization\obj\Debug\netcoreapp3.1\Authorization.dll
 G:\visual studio\CTS MFPE Project V3\backup\Retail Product Management\Retail Product Management\Authorization\Authorization\obj\Debug\netcoreapp3.1\Authorization.pdb
 G:\visual studio\CTS MFPE Project V3\backup\Retail Product Management\Retail Product Management\Authorization\Authorization\obj\Debug\netcoreapp3.1\Authorization.genruntimeconfig.cache
+G:\visual studio\CTS MFPE Project V3\backup\Retail Product Management\Retail Product Management\Authorization\Authorization\bin\Debug\netcoreapp3.1\Authorization.yaml

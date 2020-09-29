@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace Authorization.Controllers
 {
@@ -15,16 +16,15 @@ namespace Authorization.Controllers
 
     public class ProceedToBuyController : ControllerBase
     {
-        Uri baseAddress = new Uri("https://localhost:44321");
+        IConfiguration configuration;
         HttpClient client;
 
-        public ProceedToBuyController()
+        public ProceedToBuyController(IConfiguration config)
         {
+            configuration = config;
             client = new HttpClient();
-            client.BaseAddress = baseAddress;
+            client.BaseAddress = new Uri(configuration["ProceedToBuy"]);
         }
-
-        
 
         [HttpGet("{Var}")]
         public IActionResult GetbyNameOrId(string Var)
@@ -32,7 +32,7 @@ namespace Authorization.Controllers
             HttpResponseMessage response = null;
             try
             {
-                response = client.GetAsync(client.BaseAddress + "api/Product/" + Var).Result;
+                response = client.GetAsync(client.BaseAddress + "api/ProceedToBuy/" + Var).Result;
             }
             catch
             {
